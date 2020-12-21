@@ -1,0 +1,97 @@
+Ben Foxman, netid=btf28
+Log File for HW5: LZW
+
+ESTIMATE: 29 HOURS
+
+Format:
+Date Started, Time Started, Time Spent
+Description
+
+HW5: McBash
+-------------------------------------------
+11/24, 8:30, 0:50
+
+Set Up Project Files, Looked through spec
+
+11/25, 3:45, 0:45
+
+Can handle simple commands, no locals/redirects
+
+11/25, 9:00, 0:40
+
+Worked on I/O redirection. 
+
+11/30, 1:10, 2:40
+
+Implemented heredocs, worked on pipelines
+
+11/30, 8:45, 2:45
+
+Finished heredocs/pipelines, status for pipelines
+follows pipefail.
+
+12/1, 12:50, 0:30
+
+Fixed bug in pipe status.
+
+12/1, 11:45, 1:00
+
+Implemented conditionals, fixed errno setting bug. 
+
+12/3, 5:00, 2:10
+
+Wrote code to detect if a and-or should be backgrounded,
+started working on backgrounded commands. Finished
+backgrounding. Implemented Subcmds. Progress: all done
+except built-ins + debugging. 
+
+12/6, 1:00, 1:00
+
+Started working on cd, have some issues with redirection. 
+
+12/6, 8:00, 1:50
+
+Fininshed cd, wait, export, ignoring interrupts. 
+TODO: debugging.
+
+12/7, 10:00, 2:35
+
+Big fixes (interrupt bug, subcmd bug)
+
+12/10, 1:00(am), 0:50
+
+Fixed bug where builtins didnt error check redirects.
+
+12/10, 5:40, 0:45
+
+Bug fixes - export name=val accepted bad name.
+
+12/10, 10:50, 0:20
+
+Fixed issue in makefile where program didn't make using
+make command. (Required multiple submissions for debugging)
+
+12/11, 12:25, 0:30
+
+Fixed an issue where a backgrounded wait became self-referential.
+
+TOTAL: 19h, 10m
+
+I did not work on this pset with anyone outside of the ULA's.
+
+Statement of major difficulties:
+
+This was the first (and only) problem set where I genuinely had no clue where to begin. However, after
+attending the walkthrough, I was reasonably confident on what I had to do in oder to make progress, 
+and was able to implement large chunks of the problem set in short periods of time. While I didn't
+find this pset as debug-intensive as the previous one, there were definitely some things which 
+slipped under my radar, such as handling redirection for builtins even though such redirection
+was usually meaningless, and making sure the export builtin had arguments conforming to the 
+name=value expression accepted by Bash. I wouldn't be surprised if there were a few things I missed,
+simply because this pset had far more edge cases than previous ones. Overall, not bad. 
+
+Also, in case you read this, Prof Eisenstat, I wanted to thank you so much for teaching both 223 and
+323. My ability to write code, and think logically, have skyrocketed, and I now know I made the right 
+choice in choosing CS. I also have immense respect for you as a teacher, your classes being the most 
+well structured I have ever taken. I was saddened to hear that you were in the hospital, hopefully
+everything can return to normal soon. Thanks for a great semester.  -Ben

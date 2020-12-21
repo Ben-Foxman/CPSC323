@@ -1,0 +1,104 @@
+Ben Foxman, netid=btf28
+Log File for HW4: LZW
+
+ESTIMATE: 32 HOURS
+
+Format:
+Date Started, Time Started, Time Spent
+Description
+
+HW4: LZW
+-------------------------------------------
+10/27, 1:50, 2:00
+
+Set Up Project Files, wrote encode "string" -> [numbers]
+with a array and linear search using 26-char alphabet.
+
+10/27, 6:15, 1:00
+
+Wrote Stack ADT to use in decode.
+
+10/27, 11:00, 0:40
+
+Wrote decode, encode/decode works
+-No hash table yet, stage 1 otherwise
+
+10/29, 1:30, 1:00
+
+Started writing HashTable, wrote
+create/insert/search
+
+10/29, 3:40, 2:40
+
+Worked more on the hash table, have to rethink
+some parts of the design
+
+10/29, 8:15, 3:00
+
+Memory fixed, but decode algorithm seems to be off slightly
+
+10/30, 11:05, 0:40
+
+Encode Now sends in stage 2. (First number = MAXBITS)
+
+11/1, 5:25, 0:55
+
+Switched to stage 3, implemented -m flag (13/18 cases passed).
+
+11/2, 2:30, 3:15
+
+Switched th a faster data structure for hash table (no pointers).
+Encode passes 13*size barrier, decode is not yet passing memchecks.
+
+11/2, 8:45, 0:20
+
+Fixed an issue causing the table to be resized one extra time,
+13*size barrier broken. (15/18 cases passed).
+
+11/3, 11:45, 1:45
+
+9*Size broken. Starting outlining pruning, still working
+through a weird segfault on the last case.
+
+11/4, 9:20, 2:55
+Explored pruning, have to find a more memory-efficient solution.
+
+11/5, 1:30, 1:30
+
+Pruning algorithm works except for case where
+> 1/2 of table is pruned.
+
+11/5, 4:20, 0:20
+
+Fixed issue (extra malloc). Program passes all public cases.
+
+11/6, 5:45, 0:30
+
+Implemented a "gremlin checker" to see if decode inputs could
+not have been written by encode.
+
+11/9, 5:20, 0:15
+
+Added some comments.
+
+11/11, 6:55, 0:05
+
+Added newlines in error messages.
+
+TOTAL: 22h, 50m
+
+I did not discuss this pset with anyone outside of the ULA's.
+
+Statement of major difficulties:
+
+The reputation of this problem set and the longer than usual specification definitely had
+me worried at first, but once I started writing code I realized that conceptually it was
+actually one of the easier problem sets. Unfortunately, I didn't exactly replicate my
+successful approach in mcBash and still started writing code prematurely, causing me to
+write an entire hashTable ADT which I ended up not using. Implementation wise, the hardest
+part of this problem set was undoubtedly pruning. I was able to figure out how to
+satisfy the memory constraints relatively easily, however writing a linear time pruning
+algorithm required several attempts before finding a clever way to use already allocated
+storage. Overall, this felt like a slightly harder 223 pset (similar to problem set 1),
+and I think I will take away several lesson about memory and time efficiency from this
+problem set into future ones.

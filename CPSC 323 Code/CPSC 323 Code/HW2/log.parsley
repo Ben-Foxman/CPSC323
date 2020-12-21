@@ -1,0 +1,90 @@
+Ben Foxman Log File HW2 - netid: btf28
+
+ESTIMATE: 29 hours
+
+Format:
+Date Started, Time Started, Time Spent
+Description
+
+HW2: Parsley
+-------------------------------------------
+9/21, 10:00, 1:00
+
+Read spec, set up project files, set up SFTP using CLion IDE
+
+9/22, 9:50, 3:20
+
+Wrote preliminary tokenizer (finds first token in a string)
+
+9/23, 4:00, 1:20
+
+Wrote methods for detecting [local], [redirect], changed tokenizer structure
+
+9/23, 9:10, 2:00
+
+Worked on simple
+
+9/24, 11:30, 1:10
+
+Rethought approach, tokenize entire string first
+
+9/24, 9:00, 2:00
+
+Wrote sequence/command. Fixed memory errors/parsing bugs
+
+9/25, 11:10, 1:10
+
+Wrote and-or/pipeline/stage. Program works on one token simples. (not heavily debugged)
+
+9/28, 1:00, 0:40
+
+Fixed memory leak when LHS of pipeline/sequence/and-or was invalid
+
+9/28, 3:50, 1:30
+
+Implemented Heredocs, rest of input/output:
+
+9/28, 7:00, 1:20
+
+Debugged pipelines
+
+9/29, 5:30, 6:10
+
+Did subcmd, had to figure out i/o with nested subcommands. all public cases passed
+
+9/30, 3:55, 0:30
+
+Did some debugging fixing i/o redirection
+
+9/30, 11:45, 0:30
+
+Fixed local variable syntax
+
+10/1, 9:00, 0:45
+
+Fixed memory bug with multiple i/o
+
+TOTAL: 23h, 25m
+
+
+I did not discuss the contents of this problem set with anyone outside of the ULA's.
+
+Statement of major difficulties:
+
+As usual, I wish I spent more planning before I started writing code. I initially wanted to do the tokenizing
+and the tree-building at the same time, which I eventually realized that although possible, this approach
+made it too hard to keep track of memory/detect errors. I decide instead to the tokenization first, which
+I think was a good idea. Creating the tree-builder was relatively easy until I tried to implement
+subcmd, which made me realize that I would have to rethink my approach slightly to deal with nested commands
+and input/output redirection within multiple subcommands. I had several issues with malloc/free throughout
+the pset, which I attribute mostly to trying to write large chunks of code all at once without paying
+close attention to the memory. Overall, I thought this p-set was a little harder than pset 1.
+
+
+
+
+
+
+
+
+

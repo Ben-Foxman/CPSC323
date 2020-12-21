@@ -1,0 +1,57 @@
+Ben Foxman - netid btf28
+HW3 Log File
+
+ESTIMATE: 15 Hours
+
+Format:
+Date Started, Time Started, Time Spent
+Decription
+
+HW3: mcBash
+-------------------------------------------
+10/14, 2:20, 2:40
+
+Brainstorming + Psuedocode, Wrote outline of script in python
+ (in fact, implemented almost all expansions, except for NAME=WORD and NAME-WORD)
+
+
+10/19, 4:20, 1:00
+
+Wrote {NAME-WORD}, having some problems with exiting program
+
+10/19, 7:10, 0:20
+
+Wrote {NAME=WORD}, program passes all public test cases (Wow this was fast! I think outlining really paid off)
+
+10/19, 10:00, 0:15
+
+Fixed error with missing newline at end of output
+
+10/19, 11:30, 0:45
+
+Fixed issue with ${NAME=WORD} when NAME existed
+
+10/21, 1:20, 1:30
+
+Random Debugging - Fixed ${a=${a=b}...} errors
+
+10/22, 10:20, 0:45
+
+More debugging with lots of nested loops.
+
+TOTAL: 7h, 15m
+
+I did not discuss this problem set with anyone outside of the ULA's.
+
+Statement of major difficulties:
+
+This problem set (by design, I'm sure) wasn't nearly as hard for me as the previous ones were. The algorithm
+was fairly straightforward, although I did have to make a few minor adjustments when programming the recursive
+expansion of WORD. I honestly think that the hardest part of this assignment for me was debugging after passing
+the public test cases, which I spent just about as much time doing as writing the bulk of the code. I definitely
+struggled to think of novel test cases to try, and I definitely was not as efficient as I could have been. I
+think I will try to collaborate more on the next 2 psets, as it's not super easy to get a fresh perspective when
+I'm doing most, if not all of the assignment by myself. I'm definitely very curious to see if I will fail some
+test cases, since I went through the spec several times and thought I hit every case. Overall, a good pset
+to have concurrently with the midterm.
+

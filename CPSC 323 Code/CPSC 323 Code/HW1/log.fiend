@@ -1,0 +1,98 @@
+Benjamin Foxman Log File HW1 - netid: btf28
+
+ESTIMATE: 20 hours
+
+Format:
+Date Started, Time Started, Time Spent
+Decription
+
+HW1: FIEND
+-------------------------------------------
+9/4, 4:15pm, 0:10
+Set Up Project Files
+
+9/7, 11:00pm, 2:10
+
+Created struct to store info about command line args.
+Wrote methods to allocate, free, insert into this struct. 
+
+9/8, 11:20pm, 1:30
+
+Fixed memory leaks by rewriting char ** as linked lists.
+
+9/9, 5:45pm, 1:20
+
+Worked on finite state machine to do parsing.
+
+9/10, 12:45am, 0:45
+
+Fixed some parsing bugs, implemented -depth/-maxdepth warning.
+
+9/10, 11:30am, 1:20
+
+Finished all parsing except for exec.
+
+9/10, 2:45am, 0:45
+
+Implemented -exec, debugged finite state machine. 
+
+9/13, 6:30pm, 4:30
+
+Wrote tree traversal, -depth, -P, -L, -print implemented (10/18)
+
+9/13, 12:30pm, 0:35
+
+fixed bug in -P (11/18)
+
+9/14, 7:30pm, 4:00
+
+-exec with no replacement (12/18), exec w/ replacement (14/18)
+- -a, -o logic, -name (just -newer and link looping left) (16/18)
+
+9/15, 12:00pm, 2:15
+
+-newer (17/18) + symlink bugs fixed
+
+9/15, 3:45pm, 1:15
+
+-symlink loops detected (18/18)
+
+9/16, 9:20pm, 1:30
+
+Bugs in -a, -o logic fixed
+
+9/17, 7:45pm, 0:45
+
+Fixed bug where opendir had missing error message
+
+9/18, 12:00am, 0:35
+
+Fixedd bug where non-existent loops were detected
+
+TOTAL: 23h, 25m
+
+
+I did not discuss the contents of this problem set with anyone outside of the ULA's.
+
+Major Difficulties:
+
+Design: There were a lot of moving parts to keep track of in the problem set, especially while doing the parsing. With some better planning/outlining, I think I could have made keeping track of the various flags and operators much easier.
+
+Algorithms: It took me a few tries to solidify the AND/OR logic for expression evaluation, mostly due to having a bunch of unnecessary variables which cluttered the code. 
+
+Structure: Several of my helper methods for working with the structs I created felt a little bit redundant, I started writing entirely new methods to do various operations when I could have modified existing ones. 
+
+Overall, I think I learned several valuable lessons for future PSETS in the class: I should outline/pseudocode a solution
+more before I begin to write large chunks of code, and more effecitively utilize the debugger.
+
+
+
+
+
+
+
+
+
+
+
+
